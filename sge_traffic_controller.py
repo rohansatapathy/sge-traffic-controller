@@ -33,7 +33,7 @@ def main(api_key, arduino):
 if __name__ == "__main__":
     load_dotenv()
     API_KEY = os.environ['API_KEY']
-    arduino = serial.Serial("/dev/cu.usbmodem1101", 9600, timeout=0.1)
+    arduino = serial.Serial("/dev/cu.usbmodem11101", 9600, timeout=0.1)
     main(API_KEY, arduino)
 
 
